@@ -19,12 +19,11 @@ This project now uses [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) for video URL
      ```
    - Or download a standalone binary from the official `yt-dlp` release page.
    - Runtime fallback order is: `YT_DLP_BIN` (if set and valid), `yt-dlp`, `python3 -m yt_dlp`, `python -m yt_dlp`, then `py -m yt_dlp`.
+   - Optional custom binary path:
+     ```bash
+     export YT_DLP_BIN=/absolute/path/to/yt-dlp
+     ```
 3. Run the app:
    ```bash
    npm run dev
    ```
-
-Optional: set a custom binary path:
-```bash
-export YT_DLP_BIN=/absolute/path/to/yt-dlp
-```
